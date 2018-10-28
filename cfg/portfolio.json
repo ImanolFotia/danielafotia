@@ -1,0 +1,27 @@
+{
+    "portfolio":  {
+        "Fotos" : 
+        [
+            "./media/fotos/eye.jpg",
+            "./media/fotos/coreano.jpg",
+            "./media/fotos/crystalmoon.jpg",
+            "./media/fotos/cuervo.jpg",
+            "./media/fotos/dandelion.jpg",
+            "./media/fotos/deer.jpg",
+            "./media/fotos/dragoneye.jpg",
+            "./media/fotos/example0.jpg",
+            "./media/fotos/example1.jpg",
+            "./media/fotos/example2.jpg",
+            "./media/fotos/example3.jpg",
+            "./media/fotos/example4.jpg",
+            "./media/fotos/example5.jpg",
+            "./media/fotos/geisha.jpg",
+            "./media/fotos/huntersmark.jpg",
+            "./media/fotos/leaves.jpg",
+            "./media/fotos/Prongs.jpg",
+            "./media/fotos/ravens.jpg",
+            "./media/fotos/triangles.jpg",
+            "./media/fotos/zorro.jpg"
+        ]
+}
+}

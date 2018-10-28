@@ -1,0 +1,285 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: grey;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Angeline Vintage';
+    src: url('../fonts/AngelineVintage.eot');
+    src: url('../fonts/AngelineVintage.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AngelineVintage.woff2') format('woff2'),
+        url('../fonts/AngelineVintage.woff') format('woff'),
+        url('../fonts/AngelineVintage.ttf') format('truetype'),
+        url('../fonts/AngelineVintage.svg#AngelineVintage') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main_name {
+    font-family: 'Angeline Vintage';
+}
+
+.parent-parallax {
+    
+    /* Set a specific height */
+    height: 600px; 
+    width: 100%;
+    max-width: 100%;
+    margin: 0px;
+}
+
+.container-fluid.portfolio {
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("../media/parallax4.jpg");
+
+    /* Set a specific height */
+    height: 600px; 
+    width: 100%;
+    max-width: 100%;
+    margin: 0px;
+    padding-bottom: 0px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: gray;
+    -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
+    filter: blur(0px);
+}
+.image-text-centered {
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    color: #333;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -415px);
+    -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
+    filter: blur(0px);
+}
+
+.personal-img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    padding: 2%;
+}
+
+.contact{
+
+    margin-left: 20%; 
+    margin-right: 20%;
+}
+
+@media screen and (max-width: 1358px) {
+    .personal-img {
+        max-width: 100%;
+        width: 800px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .contact
+    {
+        margin-left: 5px; 
+        margin-right: 5px;
+    }
+}
+.section{
+    background-color: white;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-bottom: 5%;
+    padding-top: 0%;
+}
+
+.container-fluid {
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+.title{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: static;
+    text-align: center;
+    font-size: 25px;
+}
+.img-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+/* Create four equal columns that sits next to each other */
+.img-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.img-column img {
+
+  width: 100%;
+  height: auto;
+  margin-top: 8px;
+  vertical-align: middle;
+  border-radius: 3%;
+  
+}
+
+.modal-img{
+    align-content: center;
+    width: auto;
+    height: 100%;
+    max-height: 100%; 
+    border-radius: 2%;
+}
+
+.modal-container {
+    width: 100%; 
+    height: 100%; 
+    max-height: 100%; 
+    padding: 1%;
+}
+
+.picture
+{
+	animation-name: unhover;
+	animation-duration: 0.25s;
+	animation-fill-mode: backwards;
+}
+
+.picture:hover 
+{cursor: pointer;
+	z-index: 50;
+	animation-name: zoom;
+	animation-duration: 0.25s;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes unhover
+{
+    from {transform:scale(1.1)} 
+    to {transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(1)} 
+    to {transform:scale(1.1)}
+}
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 1358px) {
+    .img-column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  /*@media screen and (max-width: 800px) {
+    .img-column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }*/
+
+  .cutout-text {
+    background-color: white;
+    color: black;
+    font-size: 10vw; 
+    font-weight: bold;
+    /*margin: 0 auto;
+    padding: 10px;*/
+    width: 45%;
+    text-align: center;
+    position: relative;
+    /*top: 50%;
+    left: 50%;
+    /*transform: translate(-50%, -50%);*/
+    mix-blend-mode: screen;
+    border-radius: 15px;
+    
+    font-family: 'Angeline Vintage';
+  }
+
+  #socialnav a {
+    z-index: 50;
+    top: -5000;
+    transform: translate(0,70%);
+    position: fixed;
+    left: -100px;
+    transition: 0.3s;
+    padding: 10px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    width: 150px;
+    border-radius: 5px;
+    vertical-align: middle;
+    display : flex;
+    text-align: right;
+    justify-content: end;
+}
+
+#socialnav a:hover {
+    left: 0;
+}
+
+#instagram {
+    top: 40px;
+    width: 150px;
+    background-color: #e1306c;
+    display : flex;
+    text-align: right;
+    justify-content: end;
+}
+
+#twitter {
+    top: 105px;
+    background-color: #1da1f2;
+    display : flex;
+    text-align: right;
+    justify-content: end;
+}
+
+#pinterest {
+    top: 165px;
+    background-color: #bd081c;
+    display : flex;
+    text-align: right;
+    justify-content: end;
+}
+
+#facebook {
+    top: 222px;
+    background-color: #3b5998;
+    display : flex;
+    text-align: right;
+    justify-content: end;
+}

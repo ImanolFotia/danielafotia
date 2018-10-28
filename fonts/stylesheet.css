@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Angeline Vintage';
+    src: url('AngelineVintage.eot');
+    src: url('AngelineVintage.eot?#iefix') format('embedded-opentype'),
+        url('AngelineVintage.woff2') format('woff2'),
+        url('AngelineVintage.woff') format('woff'),
+        url('AngelineVintage.ttf') format('truetype'),
+        url('AngelineVintage.svg#AngelineVintage') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
